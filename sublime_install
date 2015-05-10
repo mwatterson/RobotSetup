@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ $UID != 0 ]]; then
+    echo "Please start the script as root or sudo!"
+    exit 1
+fi
+
+#install sublime 3
+cd ~/Downloads
+wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_amd64.deb
+sudo dpkg -i sublime-text_build-3059_amd64.deb
+rm sublime-text_build-3059_amd64.deb
+cd -

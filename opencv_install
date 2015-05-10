@@ -1,0 +1,18 @@
+#!/bin/bash
+if [[ $UID != 0 ]]; then
+    echo "Please start the script as root or sudo!"
+    exit 1
+fi
+#install opencv
+cd ~/Downloads
+wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fopencvlibrary%2F&ts=1408906727&use_mirror=hivelocity
+unzip opencv-2.4.9.zip
+cd opencv-2.4.9
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make -j16
+sudo make install
+cd ../../
+rm -rf opencv-2.4.9
+rm opencv-2.4.9.zip

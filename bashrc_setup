@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "export ROS_PARALLEL_JOBS=-j8" >> ~/.bashrc
+echo "alias make=\"/usr/bin/make -j 8\"" >> ~/.profile
