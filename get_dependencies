@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $UID != 0 ]]; then
+    echo "Please start the script as root or sudo!"
+    exit 1
+fi
+#install build essential
+sudo apt-get -y install build-essential libeigen3-dev git keepassx
+
+#point grey flycap
+sudo apt-get -y install libraw1394-11 libgtk2.0-0 libgtkmm-2.4-dev libglademm-2.4-dev libgtkglextmm-x11-1.2-dev libusb-1.0-0
