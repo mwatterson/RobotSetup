@@ -5,7 +5,7 @@ if [[ $UID != 0 ]]; then
 fi
 #install opencv
 cd ~/Downloads
-wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fopencvlibrary%2F&ts=1408906727&use_mirror=hivelocity
+wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip
 unzip opencv-2.4.9.zip
 cd opencv-2.4.9
 mkdir build
