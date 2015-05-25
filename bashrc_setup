@@ -2,3 +2,6 @@
 
 echo "export ROS_PARALLEL_JOBS=-j8" >> ~/.bashrc
 echo "alias make=\"/usr/bin/make -j 8\"" >> ~/.profile
+
+echo "alias cm='catkin_make -DCMAKE_BUILD_TYPE=RelWithDebInfo'" >> ~/.bashrc
+echo "alias cmr='catkin_make -DCMAKE_BUILD_TYPE=Release'" >> ~/.bashrc
