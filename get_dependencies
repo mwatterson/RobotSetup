@@ -5,7 +5,7 @@ if [[ $UID != 0 ]]; then
     exit 1
 fi
 #install build essential
-sudo apt-get -y install build-essential libeigen3-dev git keepassx
+sudo apt-get -y install build-essential libeigen3-dev git keepassx gfortran
 
 #point grey flycap
 sudo apt-get -y install libraw1394-11 libgtk2.0-0 libgtkmm-2.4-dev libglademm-2.4-dev libgtkglextmm-x11-1.2-dev libusb-1.0-0
